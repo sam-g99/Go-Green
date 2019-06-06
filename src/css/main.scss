@@ -1,0 +1,129 @@
+$bgColor: rgb(235, 235, 235);
+$green: #35D06A;
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background: $bgColor;
+    top:0;
+    border-radius: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.greeting{
+    background: $green;
+    padding-bottom:50px;
+    h1{
+        color:white;
+        text-align: center;
+        font-size: 12vw;
+    }
+}
+.greeting-background{
+    width:100%;
+    position: absolute;
+    z-index: -100;
+}
+.btn{
+    display: flex;
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+    background-color:white;
+    border-radius: 100px;
+    padding:10px;
+    cursor: pointer;
+    user-select: none;
+    p{
+        color:$green;
+        font-weight: 600;
+        margin-left:20px;
+        font-size: 25px;
+    }
+    .down-arrow{
+        width:25px;
+        margin-left:auto;
+        margin-right:10px;
+    }
+
+}
+.content-container{
+    display: flex;
+    flex-flow: column;
+    margin:0 auto;
+    margin-top:100px;
+    max-width:1200px;
+    
+}
+.going-green{
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom:60px;
+    width:90%;
+    align-self: center;
+    h2{
+        color: #FFA149;
+        font-size: 6vw;
+        position:sticky;
+        background:white;
+        top:0;
+        padding:10px;
+    }
+    img{
+        width:100%;
+        margin-left: auto;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .info{
+        background: rgb(255, 255, 255);
+        border-radius: 0px 0px 20px 20px;
+        ol{
+            list-style: none;
+            li{
+                padding:10px;
+            }
+        }
+    }
+}
+footer{
+    background:rgb(44, 44, 44);
+    height:200px;
+    width:100%;
+    color:white;
+    text-decoration: none;
+    padding:10px;
+    a{
+        text-decoration: none;
+        color:white;
+        font-weight:bold;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .going-green{
+        flex-flow: row;
+        img{
+            width:50%;
+            height:70%;
+            border-radius: 0;
+            position: sticky;
+            top:0;
+        }
+        .info{
+            border-radius: 0;
+        }
+        h2{
+            font-size:40px;
+        }
+    }
+    .btn{
+        width: 524.69px;
+    }
+  }
+  @media only screen and (min-width: 750px){
+      .greeting{
+          h1{
+            font-size: 90px;
+          }
+      }
+  }
